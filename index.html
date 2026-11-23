@@ -207,6 +207,17 @@
   .q-list li{background:#fff;border-radius:16px 16px 16px 4px;padding:10px 16px;font-size:.97rem}
   .q-list li::before{content:"💬 ";}
 
+  .mini{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .mini span{background:var(--blue-soft);border-radius:14px;padding:10px 16px;font-weight:800}
+  .mini i{font-style:normal;color:var(--blue);font-weight:800}
+  .ov h3{margin:0}
+  .why{grid-template-columns:repeat(3,1fr)!important}
+  @media (max-width:699px){.why{grid-template-columns:1fr!important}}
+  .flow-step p{font-size:1.25rem}
+  .card p{font-size:1.05rem}
+  .mgr{align-items:center}
+  .mgr h4{margin:0}
+  .course .bring{margin-top:22px;font-size:1.05rem}
   /* manager */
   .bigquote{
     text-align:center;font-size:1.75rem;font-weight:800;line-height:1.5;
@@ -278,9 +289,9 @@
       <h1>ใช้ <span class="hl">Claude</span><br>เป็นผู้ช่วยส่วนตัว<br>ของธุรกิจคุณ</h1>
       <p class="lead">ไม่ต้องเขียนโค้ดเป็น<br>แค่มี<strong>วิสัยทัศน์</strong> และ<strong>สั่งงานลูกน้องเป็น</strong></p>
       <ul class="pills">
-        <li>ใช้ภาษาไทยธรรมดา</li>
-        <li>ลดงานซ้ำซาก</li>
-        <li>เรียนจบ ใช้ได้ทันที</li>
+        <li>ไม่ลา</li>
+        <li>ไม่สาย</li>
+        <li>ไม่บ่น</li>
       </ul>
       <a class="btn" href="#course">ดูรายละเอียดคอร์ส ↓</a>
     </div>
@@ -324,13 +335,12 @@
 <!-- ================= OVERVIEW ================= -->
 <section class="overview">
   <div class="wrap">
-    <h2>คอร์สนี้สอนอะไร?</h2>
-    <p class="sub-center">4 เรื่องหลัก กดที่หัวข้อเพื่ออ่านต่อ</p>
+    <h2>4 เรื่อง ใน 1 คอร์ส</h2>
     <div class="ov-grid">
-      <a class="ov" href="#part1"><div class="num">1</div><h3>งานประจำวัน</h3><p>อีเมล ออเดอร์ ตาราง บิล</p></a>
-      <a class="ov" href="#part2"><div class="num">2</div><h3>Claude Skill</h3><p>สอนครั้งเดียว ทำซ้ำได้ทุกวัน</p></a>
-      <a class="ov" href="#part3"><div class="num">3</div><h3>เว็บไซต์ + หลังบ้าน</h3><p>มีเว็บร้านและระบบเก็บข้อมูล</p></a>
-      <a class="ov" href="#part4"><div class="num">4</div><h3>ไม่ต้องเขียนโค้ด</h3><p>แค่สั่งงานเป็น ก็ใช้ได้</p></a>
+      <a class="ov" href="#part1"><div class="num">1</div><h3>งานจุกจิก<br>ยกให้ Claude</h3></a>
+      <a class="ov" href="#part2"><div class="num">2</div><h3>สอนครั้งเดียว<br>ทำได้ทุกวัน</h3></a>
+      <a class="ov" href="#part3"><div class="num">3</div><h3>มีเว็บร้าน<br>แค่เล่าให้ฟัง</h3></a>
+      <a class="ov" href="#part4"><div class="num">4</div><h3>ไม่ต้องโค้ด<br>แค่สั่งเป็น</h3></a>
     </div>
   </div>
 </section>
@@ -339,11 +349,10 @@
 <section class="part" id="part1">
   <div class="wrap">
     <span class="part-label">ตอนที่ 1</span>
-    <h2>งานประจำวัน ให้ Claude ช่วย</h2>
-    <p class="part-lead">งานจุกจิกที่กินเวลาทุกวัน ให้ Claude ทำ<br>คุณแค่<strong>ตรวจ</strong>และ<strong>ตัดสินใจ</strong></p>
+    <h2>งานจุกจิก ยกให้ Claude</h2>
+    <p class="part-lead">Claude ทำ — คุณแค่<strong>ตรวจ</strong> แล้ว<strong>ตัดสินใจ</strong></p>
 
     <div class="cards c3">
-      <!-- email -->
       <article class="card">
         <svg class="icon" viewBox="0 0 84 84" aria-hidden="true">
           <rect width="84" height="84" rx="22" fill="#E2ECF8"/>
@@ -352,12 +361,11 @@
           <circle cx="66" cy="24" r="10" fill="#C8553D"/>
           <text x="66" y="29" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" font-family="Sarabun">!</text>
         </svg>
-        <h3>📧 ตรวจอีเมล</h3>
-        <p>Claude อ่านอีเมลให้ บอกว่าฉบับไหนด่วน ใครรอคำตอบ และ<strong>ร่างคำตอบ</strong>ไว้ให้ คุณแค่อ่านแล้วกดส่ง</p>
-        <p class="tag">⏰ <strong>ตั้งเวลาได้</strong> ให้สรุปเองทุกเช้า ไม่ต้องสั่งซ้ำ</p>
-        <div class="say"><b>คุณพิมพ์ว่า</b>“ทุกเช้า 8 โมง สรุปอีเมลให้หน่อย อันไหนลูกค้ารอคำตอบ ช่วยร่างคำตอบไว้ด้วย”</div>
+        <h3>📧 อีเมล</h3>
+        <p>เช้ามา <strong>สรุปให้ ร่างตอบให้</strong></p>
+        <p class="tag">⏰ ตั้งเวลาได้ ทำเองทุกเช้า</p>
+        <div class="say"><b>คุณพิมพ์ว่า</b>“ทุกเช้า 8 โมง สรุปอีเมล พร้อมร่างคำตอบ”</div>
       </article>
-      <!-- order -->
       <article class="card">
         <svg class="icon" viewBox="0 0 84 84" aria-hidden="true">
           <rect width="84" height="84" rx="22" fill="#F8E3DA"/>
@@ -368,11 +376,10 @@
           <path d="M28 52 l4 4 l8 -8" stroke="#2E7D5B" stroke-width="4" fill="none" stroke-linecap="round"/>
           <rect x="44" y="50" width="14" height="5" rx="2" fill="#C8553D"/>
         </svg>
-        <h3>🛒 บันทึกออเดอร์</h3>
-        <p>ออเดอร์จาก <strong>Shopee</strong>, LINE หรือโทรมา แค่ส่งไฟล์หรือข้อความให้ Claude รวมลงตารางเดียว ครบ <strong>ชื่อ สินค้า จำนวน ที่อยู่</strong></p>
-        <div class="say"><b>คุณพิมพ์ว่า</b>“นี่คือไฟล์ออเดอร์จาก Shopee กับข้อความลูกค้าจาก LINE วันนี้ ช่วยรวมลงตารางออเดอร์เดียวกันให้หน่อย”</div>
+        <h3>🛒 ออเดอร์</h3>
+        <p><strong>Shopee + LINE</strong><br>รวมเป็นตารางเดียว</p>
+        <div class="say"><b>คุณพิมพ์ว่า</b>“รวมออเดอร์ Shopee กับ LINE วันนี้ ลงตาราง”</div>
       </article>
-      <!-- table -->
       <article class="card">
         <svg class="icon" viewBox="0 0 84 84" aria-hidden="true">
           <rect width="84" height="84" rx="22" fill="#DFF1E8"/>
@@ -382,19 +389,16 @@
           <line x1="14" y1="54" x2="70" y2="54" stroke="#2E7D5B" stroke-width="3"/>
           <line x1="36" y1="30" x2="36" y2="66" stroke="#2E7D5B" stroke-width="3"/>
         </svg>
-        <h3>📋 จัดตารางข้อมูล</h3>
-        <p>ข้อมูลกระจัดกระจาย มีชื่อซ้ำ เรียงไม่เป็นระเบียบ Claude <strong>จัดเรียง ลบซ้ำ แยกหมวด</strong> ให้อ่านง่าย</p>
-        <div class="say"><b>คุณพิมพ์ว่า</b>“จัดรายชื่อลูกค้านี้เป็นตาราง เรียงตามจังหวัด ลบชื่อซ้ำออก”</div>
+        <h3>📋 ตารางข้อมูล</h3>
+        <p>ข้อมูลรก ๆ<br>กลายเป็น<strong>ตารางสวย</strong></p>
+        <div class="say"><b>คุณพิมพ์ว่า</b>“เรียงลูกค้าตามจังหวัด ลบชื่อซ้ำ”</div>
       </article>
     </div>
 
-    <!-- featured: bills to excel -->
     <div class="feature">
-      <h3>🧾 เปลี่ยนบิลกระดาษ เป็นไฟล์ Excel พร้อมยอดรวม</h3>
-      <p>ไม่ต้องนั่งพิมพ์ตัวเลขจากใบเสร็จทีละใบอีกต่อไป</p>
+      <h3>🧾 บิลกองโต → Excel พร้อมยอดรวม</h3>
       <div class="flow">
-        <div class="flow-step">
-          <svg viewBox="0 0 120 130" aria-hidden="true">
+        <div class="flow-step"><svg viewBox="0 0 120 130" aria-hidden="true">
             <rect x="22" y="6" width="76" height="118" rx="14" fill="#1F2A44"/>
             <rect x="28" y="18" width="64" height="88" rx="4" fill="#fff"/>
             <path d="M40 30 h40 v62 l-5 -4 l-5 4 l-5 -4 l-5 4 l-5 -4 l-5 4 l-5 -4 l-5 4z" fill="#FBF0D3" stroke="#E0A526" stroke-width="2"/>
@@ -403,24 +407,16 @@
             <rect x="46" y="62" width="26" height="4" rx="2" fill="#B08A2E"/>
             <rect x="46" y="74" width="28" height="5" rx="2" fill="#C8553D"/>
             <circle cx="60" cy="115" r="5" fill="#44506B"/>
-          </svg>
-          <span class="stepno">ขั้นที่ 1</span>
-          <p>ถ่ายรูปบิล / ใบเสร็จ</p>
-        </div>
+          </svg><span class="stepno">1</span><p>ถ่าย</p></div>
         <div class="arrow" aria-hidden="true">➜</div>
-        <div class="flow-step">
-          <svg viewBox="0 0 120 130" aria-hidden="true">
+        <div class="flow-step"><svg viewBox="0 0 120 130" aria-hidden="true">
             <rect x="10" y="20" width="100" height="70" rx="22" fill="#2F5D9E"/>
             <path d="M40 88 l-8 24 l30 -24z" fill="#2F5D9E"/>
             <text x="60" y="64" text-anchor="middle" font-family="Sarabun" font-size="26" font-weight="800" fill="#fff">ส่งให้</text>
             <path d="M100 8 l4 10 l10 4 l-10 4 l-4 10 l-4 -10 l-10 -4 l10 -4z" fill="#E0A526"/>
-          </svg>
-          <span class="stepno">ขั้นที่ 2</span>
-          <p>ส่งรูปให้ Claude</p>
-        </div>
+          </svg><span class="stepno">2</span><p>ส่ง</p></div>
         <div class="arrow" aria-hidden="true">➜</div>
-        <div class="flow-step">
-          <svg viewBox="0 0 170 130" aria-hidden="true">
+        <div class="flow-step"><svg viewBox="0 0 170 130" aria-hidden="true">
             <rect x="6" y="8" width="158" height="114" rx="10" fill="#fff" stroke="#2E7D5B" stroke-width="3"/>
             <rect x="6" y="8" width="158" height="22" rx="10" fill="#2E7D5B"/>
             <text x="16" y="25" font-family="Sarabun" font-size="14" font-weight="700" fill="#fff">ร้าน</text>
@@ -435,13 +431,9 @@
             <rect x="9" y="96" width="152" height="23" fill="#FBF0D3"/>
             <text x="16" y="113" font-family="Sarabun" font-size="15" font-weight="800" fill="#9E3D29">รวม</text>
             <text x="150" y="113" text-anchor="end" font-family="Sarabun" font-size="15" font-weight="800" fill="#9E3D29">4,270</text>
-          </svg>
-          <span class="stepno">ขั้นที่ 3</span>
-          <p>ได้ไฟล์ Excel + ยอดรวม</p>
-        </div>
+          </svg><span class="stepno">3</span><p>ได้ Excel</p></div>
       </div>
-      <div class="say" style="max-width:40em"><b>คุณพิมพ์ว่า</b>“นี่คือรูปบิลค่าวัตถุดิบเดือนนี้ ช่วยทำเป็นไฟล์ Excel แยกตามร้าน แล้วรวมยอดให้ด้วย”</div>
-      <div class="note">ควรเปิดดูตัวเลขซ้ำอีกครั้งเสมอ โดยเฉพาะบิลที่เขียนด้วยลายมือ เหมือนตรวจงานของพนักงานใหม่</div>
+      <div class="note">ตัวเลขสำคัญ ตรวจซ้ำอีกนิด — เหมือนตรวจงานพนักงานใหม่</div>
     </div>
   </div>
 </section>
@@ -449,35 +441,24 @@
 <!-- ================= PART 2 ================= -->
 <section class="part alt" id="part2">
   <div class="wrap">
-    <span class="part-label">ตอนที่ 2</span>
-    <h2>Claude Skill คืออะไร?</h2>
-
+    <span class="part-label">ตอนที่ 2 · Claude Skill</span>
+    <h2>สอนครั้งเดียว ทำได้ทุกวัน</h2>
     <div class="two">
-      <div>
-        <div class="analogy">Skill ก็เหมือน <strong>“คู่มือการทำงาน”</strong> ที่คุณเขียนให้พนักงานใหม่ครั้งเดียว แล้วเขาทำตามได้ทุกวัน</div>
-        <p>Skill คือ<strong>ขั้นตอนการทำงานที่บันทึกไว้</strong> เมื่อเจองานแบบเดิม Claude จะหยิบคู่มือนี้มาใช้เอง คุณไม่ต้องอธิบายซ้ำทุกครั้ง</p>
-        <p>คุณสร้าง Skill ได้ด้วยการ<strong>เล่าขั้นตอนเป็นภาษาไทย</strong> ให้ Claude ช่วยเขียนเป็นคู่มือให้</p>
-      </div>
+      <div class="analogy">Skill = <strong>คู่มือการทำงาน</strong><br>ที่เขียนให้พนักงานใหม่ครั้งเดียว<br>แล้วเขาทำตามได้ตลอด</div>
       <div class="skill-box">
-        <h4>📘 ตัวอย่าง Skill: “สรุปยอดขายประจำสัปดาห์”</h4>
+        <h4>📘 Skill “สรุปยอดประจำสัปดาห์”</h4>
         <ol>
-          <li>เปิดไฟล์ออเดอร์ของสัปดาห์นี้</li>
-          <li>รวมยอดขาย แยกตามสินค้า</li>
-          <li>เทียบกับสัปดาห์ก่อน ขึ้นหรือลง</li>
-          <li>ทำรายงานสั้น 1 หน้า ส่งให้เจ้าของร้าน</li>
+          <li>รวมยอด แยกตามสินค้า</li>
+          <li>เทียบกับสัปดาห์ก่อน</li>
+          <li>ทำรายงาน 1 หน้า</li>
         </ol>
-        <div class="say" style="margin-top:16px;background:#fff"><b>ครั้งต่อไป คุณพิมพ์แค่</b>“สรุปยอดสัปดาห์นี้”</div>
+        <div class="say" style="margin-top:16px;background:#fff"><b>ครั้งต่อไป พิมพ์แค่</b>“สรุปยอดสัปดาห์นี้”</div>
       </div>
     </div>
-
-    <h3 style="margin-top:48px">ทำไม Claude จึงเหมาะกับงานประจำ?</h3>
     <div class="why">
-      <div class="why-item"><div class="emo">🔁</div><div><h4>ทำเหมือนเดิมทุกครั้ง</h4><p>รูปแบบเดิม มาตรฐานเดิม ตามคู่มือที่ให้ไว้</p></div></div>
-      <div class="why-item"><div class="emo">🎓</div><div><h4>สอนครั้งเดียว</h4><p>ไม่ต้องอธิบายใหม่ทุกวัน</p></div></div>
-      <div class="why-item"><div class="emo">⏱️</div><div><h4>ประหยัดเวลา</h4><p>หลายงานที่เคยใช้เป็นชั่วโมง เหลือไม่กี่นาที</p></div></div>
-      <div class="why-item"><div class="emo">😊</div><div><h4>ไม่เบื่องานซ้ำ</h4><p>งานซ้ำซากแค่ไหน ก็ช่วยทำได้ทุกวัน</p></div></div>
-      <div class="why-item"><div class="emo">🔗</div><div><h4>ต่อกับเครื่องมือที่ใช้อยู่</h4><p>เชื่อมกับอีเมล ปฏิทิน และไฟล์งานได้</p></div></div>
-      <div class="why-item"><div class="emo">🗣️</div><div><h4>เข้าใจภาษาไทย</h4><p>พิมพ์แบบที่พูดกันทั่วไป ก็เข้าใจ</p></div></div>
+      <div class="why-item"><div class="emo">🔁</div><div><h4>เป๊ะเหมือนเดิม</h4><p>ทุกครั้ง ทุกวัน</p></div></div>
+      <div class="why-item"><div class="emo">🎓</div><div><h4>สอนครั้งเดียว</h4><p>ไม่ต้องพูดซ้ำ</p></div></div>
+      <div class="why-item"><div class="emo">⏱️</div><div><h4>งานเป็นชั่วโมง</h4><p>เหลือหลักนาที</p></div></div>
     </div>
   </div>
 </section>
@@ -486,21 +467,14 @@
 <section class="part" id="part3">
   <div class="wrap">
     <span class="part-label">ตอนที่ 3</span>
-    <h2>สร้างเว็บไซต์ และระบบหลังบ้าน</h2>
-    <p class="part-lead">อยากมีเว็บไซต์ร้าน แต่ไม่อยากจ้างแพงหรือรอนาน?<br>แค่<strong>เล่าให้ Claude ฟัง</strong>ว่าอยากได้แบบไหน</p>
-
+    <h2>อยากมีเว็บร้าน? แค่เล่าให้ฟัง</h2>
     <div class="two">
-      <ol class="steps">
-        <li>
-          <h4>เล่าว่าอยากได้เว็บแบบไหน</h4>
-          <div class="say"><b>คุณพิมพ์ว่า</b>“ร้านขายผ้าไหม อยากได้เว็บโทนสีทอง มีรูปสินค้า ราคา และปุ่มติดต่อทาง LINE”</div>
-        </li>
-        <li><h4>Claude ทำตัวอย่างให้ดู</h4><p>เห็นหน้าตาเว็บจริงภายในไม่กี่นาที</p></li>
-        <li><h4>สั่งแก้ด้วยคำพูด</h4><p>“ตัวหนังสือใหญ่ขึ้นอีก” “เปลี่ยนรูปหน้าแรก” แก้ได้ไม่จำกัด</p></li>
-        <li><h4>นำขึ้นออนไลน์</h4><p>ลูกค้าเปิดดูได้จากมือถือ</p></li>
-      </ol>
-
-      <!-- ภาพประกอบเว็บไซต์ -->
+      <div>
+        <div class="say" style="margin-bottom:22px"><b>คุณพิมพ์ว่า</b>“ร้านผ้าไหม อยากได้เว็บสีทอง มีรูปสินค้า ราคา ปุ่ม LINE”</div>
+        <div class="mini">
+          <span>💬 เล่า</span><i>➜</i><span>👀 ดู</span><i>➜</i><span>✏️ สั่งแก้</span><i>➜</i><span>🌐 ออนไลน์</span>
+        </div>
+      </div>
       <svg viewBox="0 0 440 360" role="img" aria-label="ภาพตัวอย่างหน้าเว็บไซต์ร้านค้า">
         <rect x="10" y="10" width="420" height="300" rx="18" fill="#fff" stroke="#1F2A44" stroke-width="4"/>
         <rect x="10" y="10" width="420" height="40" rx="18" fill="#1F2A44"/>
@@ -538,25 +512,22 @@
     <div class="backend">
       <div class="two">
         <div>
-          <h3>🗂️ ระบบหลังบ้าน คืออะไร?</h3>
-          <p>คือ<strong>“สมุดบัญชีดิจิทัล”</strong>ของร้าน เก็บข้อมูลสำคัญไว้ที่เดียว ค้นหาง่าย ไม่หาย</p>
+          <h3>🗂️ หลังบ้าน = สมุดบัญชีดิจิทัล</h3>
           <div class="chips">
-            <span>📦 สินค้า & สต็อก</span>
-            <span>👥 ข้อมูลลูกค้า</span>
-            <span>🧾 ออเดอร์ & ยอดขาย</span>
+            <span>📦 สต็อก</span>
+            <span>👥 ลูกค้า</span>
+            <span>🧾 ยอดขาย</span>
           </div>
-          <p style="margin-top:14px">Claude ช่วย<strong>สร้างระบบ</strong> เพิ่มหรือแก้ข้อมูล และ<strong>สรุปรายงาน</strong>ให้ คุณแค่ถาม</p>
         </div>
         <div>
-          <h4 style="margin:0 0 4px;font-size:1.1rem">ถามเหมือนถามพนักงานบัญชี</h4>
+          <h4 style="margin:0 0 4px;font-size:1.1rem">ถามได้เลย เหมือนถามพนักงาน</h4>
           <ul class="q-list">
-            <li>“สินค้าตัวไหนใกล้หมดบ้าง?”</li>
-            <li>“เดือนนี้ขายได้เท่าไร เทียบเดือนที่แล้ว?”</li>
-            <li>“ลูกค้าคนไหนสั่งบ่อยที่สุด?”</li>
+            <li>“ของตัวไหนใกล้หมด?”</li>
+            <li>“เดือนนี้ขายได้เท่าไร?”</li>
           </ul>
         </div>
       </div>
-      <div class="note">ระบบที่รับเงินหรือเก็บข้อมูลส่วนตัวของลูกค้า ควรให้ผู้เชี่ยวชาญช่วยตรวจความปลอดภัยก่อนใช้งานจริง</div>
+      <div class="note">ระบบรับเงิน ควรให้ผู้เชี่ยวชาญตรวจก่อนใช้จริง</div>
     </div>
   </div>
 </section>
@@ -565,31 +536,26 @@
 <section class="part alt" id="part4">
   <div class="wrap">
     <span class="part-label">ตอนที่ 4 · หัวใจสำคัญ</span>
-    <h2>ไม่ต้องเขียนโค้ด แค่สั่งงานเป็น</h2>
-
-    <div class="bigquote">ถ้าคุณเคย<span class="hl">สั่งงานลูกน้อง</span>ได้<br>คุณก็ใช้ Claude ได้</div>
-
-    <p class="part-lead">ทักษะที่ต้องใช้คือ<strong>ทักษะผู้จัดการ</strong> ไม่ใช่ทักษะโปรแกรมเมอร์ ประสบการณ์บริหารร้านของคุณคือจุดแข็ง</p>
+    <h2>ไม่ต้องโค้ด แค่สั่งเป็น</h2>
+    <div class="bigquote">สั่งลูกน้องเป็น<br>= <span class="hl">ใช้ Claude เป็น</span></div>
 
     <div class="compare">
       <div class="cmp bad">
-        <h4>❌ สั่งแบบกว้างเกินไป</h4>
+        <h4>❌ สั่งลอย ๆ</h4>
         <div class="quote">“ทำรายงานให้หน่อย”</div>
-        <p class="res">ได้งานไม่ตรงใจ เพราะไม่รู้ว่าต้องการอะไร</p>
       </div>
       <div class="cmp good">
         <h4>✅ สั่งแบบผู้จัดการ</h4>
-        <div class="quote">“สรุปยอดขายเดือนตุลาคมจากไฟล์นี้ แยกตามสินค้า ทำเป็นตาราง และบอก 3 สินค้าขายดี”</div>
-        <p class="res">ได้งานตรงใจตั้งแต่ครั้งแรก</p>
+        <div class="quote">“สรุปยอดตุลาคม แยกตามสินค้า ทำเป็นตาราง”</div>
       </div>
     </div>
 
-    <h3>สั่งงานแบบผู้จัดการ 4 ข้อ</h3>
+    <h3 style="text-align:center">สั่งชัด งานเป๊ะ</h3>
     <div class="mgr-steps">
-      <div class="mgr"><div class="n">1</div><div><h4>บอกเป้าหมาย</h4><p>อยากได้อะไร เอาไปใช้ทำอะไร</p></div></div>
-      <div class="mgr"><div class="n">2</div><div><h4>ให้ข้อมูลครบ</h4><p>แนบไฟล์ รูปถ่าย หรือตัวอย่างงานที่ชอบ</p></div></div>
-      <div class="mgr"><div class="n">3</div><div><h4>บอกรูปแบบงาน</h4><p>ตาราง สรุปสั้น หรือจดหมายภาษาสุภาพ</p></div></div>
-      <div class="mgr"><div class="n">4</div><div><h4>ตรวจงาน แล้วสั่งแก้</h4><p>ไม่ถูกใจตรงไหน บอกให้แก้ได้เลย</p></div></div>
+      <div class="mgr"><div class="n">1</div><div><h4>บอกเป้าหมาย</h4></div></div>
+      <div class="mgr"><div class="n">2</div><div><h4>ให้ข้อมูลครบ</h4></div></div>
+      <div class="mgr"><div class="n">3</div><div><h4>บอกรูปแบบงาน</h4></div></div>
+      <div class="mgr"><div class="n">4</div><div><h4>ตรวจ แล้วสั่งแก้</h4></div></div>
     </div>
   </div>
 </section>
@@ -597,24 +563,15 @@
 <!-- ================= COURSE INFO ================= -->
 <section class="course" id="course">
   <div class="wrap">
-    <h2>รายละเอียดคอร์ส</h2>
+    <h2>เรียนจบ กลับไปใช้ได้เลย</h2>
     <div class="two">
       <div>
-        <h3>คุณจะได้อะไร</h3>
         <ul class="get">
-          <li>ลงมือทำจริง กับงานของร้านคุณเอง</li>
-          <li>ตัวอย่างคำสั่งภาษาไทย พร้อมนำไปใช้</li>
-          <li>สอนช้า ๆ ทีละขั้น เหมาะกับผู้เริ่มต้น</li>
-          <li>เอกสารประกอบ ตัวอักษรใหญ่ อ่านง่าย</li>
+          <li>ทำจริง กับงานร้านคุณเอง</li>
+          <li>คำสั่งภาษาไทย พร้อมใช้</li>
+          <li>สอนช้า ๆ ทีละขั้น</li>
         </ul>
-        <div class="bring">
-          <h3>สิ่งที่ควรเตรียมมา</h3>
-          <ul>
-            <li>โน้ตบุ๊ก หรือแท็บเล็ต</li>
-            <li>บัญชีอีเมลที่ใช้อยู่</li>
-            <li>ตัวอย่างงานจริง เช่น บิล รายการสินค้า</li>
-          </ul>
-        </div>
+        <p class="bring">🎒 <strong>เตรียมมา:</strong> โน้ตบุ๊ก + บิลหรือรายการสินค้าจริง</p>
       </div>
       <div class="info">
         <h3>📅 ข้อมูลการสมัคร</h3>
@@ -623,7 +580,6 @@
           <div class="row"><dt>เวลา</dt><dd><span class="fill">[ระบุเวลา]</span></dd></div>
           <div class="row"><dt>สถานที่</dt><dd><span class="fill">[ระบุสถานที่ / ออนไลน์]</span></dd></div>
           <div class="row"><dt>ค่าเรียน</dt><dd><span class="fill">[ระบุราคา]</span></dd></div>
-          <div class="row"><dt>ผู้สอน</dt><dd><span class="fill">[ชื่อผู้สอน]</span></dd></div>
           <div class="row"><dt>ติดต่อ</dt><dd>โทร <span class="fill">[เบอร์โทร]</span><br>LINE <span class="fill">[LINE ID]</span></dd></div>
         </dl>
         <a class="btn" href="tel:0000000000">📞 โทรสมัคร / สอบถาม</a>
